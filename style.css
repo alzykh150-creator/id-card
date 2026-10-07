@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #422462, #2575fc);
+}
+
+/* Card */
+.profile-card {
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.profile-header {
+    height: 120px;
+    background: linear-gradient(135deg, #d81ea1, #4c11c2);
+}
+
+/* Content */
+.profile-content {
+    padding: 0 25px 30px;
+    position: relative;
+}
+
+/* Foto */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: -60px;
+}
+
+/* Nama */
+.profile-content h1 {
+    margin-top: 10px;
+    font-size: 26px;
+    color: #222;
+}
+
+.username {
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Bio */
+.bio {
+    margin: 20px 0;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Statistik */
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.info h3 {
+    color: #222;
+    font-size: 20px;
+}
+
+.info p {
+    color: #777;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .profile-card {
+        width: 90%;
+    }
+}
